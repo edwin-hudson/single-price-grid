@@ -48,15 +48,25 @@ article {
     overflow: hidden;
 }
 
-.section {
-    /* padding: 2rem; */
-
-}
-
 .section.card1{
     display: flex;
     height: 45%;
     padding: 2rem;
+}
+
+.section.card1 .title {
+    color: var(--Cyan);
+    padding: 0.8rem 0;
+}
+
+.section.card1 .sub-title {
+    color: var(--Bright-Yellow);
+    padding-bottom: 1rem;
+}
+
+.section.card1 .desc {
+    color: var(--Grayish-Blue);
+    line-height: 1.6rem;
 }
 
 .section.card2 {
@@ -73,8 +83,54 @@ article {
     padding: 2rem;
 }
 
+.wrap1 .title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--Light-Gray);
+    padding-bottom: 1.2rem;
+}
+
+.pricing {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.pricing .fee {
+    font-size: 2rem;
+    color: var(--Light-Gray);
+}
+
+.pricing .status {
+    font-size: 1rem;
+    font-weight: 200;
+    color: var(--Light-Gray);
+}
+
+.wrapper.wrap1 .access {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--Light-Gray);
+    padding-bottom: 1.5rem;
+}
+
 .wrapper.wrap2 {
     background: var(--Cyan3);
     width: 50%;
     padding: 2rem;
+}
+
+.wrap2 .title {
+    font-size: 1.3rem;
+    padding-bottom: 1.2rem;
+    color: var(--Light-Gray)
+}
+
+.section.card2 .sub-title {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.3rem;
+    color: var(--Light-Gray);
 }
