@@ -9,19 +9,20 @@
 /* ### Neutral */
 
 --Light-Gray: hsl(204, 43%, 93%);
---Grayish-Blue: hsl(218, 22%, 67%);
+--Grayish-Blue: hsl(226, 8%, 67%);
 --White: hsl(0, 0%, 100%);
 --Shadow: 0 5px 25px 5px hsl(209, 46%, 86%);
+--Shadow2: 0 5px 25px 5px hsl(180, 63%, 39%);
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Karla", sans-serif;
 }
 
 body {
+    font-family: "Karla", sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,6 +68,7 @@ article {
 .section.card1 .desc {
     color: var(--Grayish-Blue);
     line-height: 1.6rem;
+    font-weight: 500;
 }
 
 .section.card2 {
@@ -80,12 +82,12 @@ article {
 .wrapper.wrap1 {
     background: var(--Cyan2);
     width: 50%;
-    padding: 2rem;
+    padding: 2.2rem;
 }
 
 .wrap1 .title {
-    font-size: 1.3rem;
-    font-weight: 700;
+    font-size: 1.2rem;
+    font-weight: 500;
     color: var(--Light-Gray);
     padding-bottom: 1.2rem;
 }
@@ -100,6 +102,7 @@ article {
 
 .pricing .fee {
     font-size: 2rem;
+    font-weight: 600;
     color: var(--Light-Gray);
 }
 
@@ -119,18 +122,32 @@ article {
 .wrapper.wrap2 {
     background: var(--Cyan3);
     width: 50%;
-    padding: 2rem;
+    padding: 2.2rem;
 }
 
 .wrap2 .title {
-    font-size: 1.3rem;
+    font-size: 1.05rem;
     padding-bottom: 1.2rem;
     color: var(--Light-Gray)
 }
 
 .section.card2 .sub-title {
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: 300;
     line-height: 1.3rem;
     color: var(--Light-Gray);
+}
+
+button {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    height: 3rem;
+    background: var(--Bright-Yellow);
+    color: var(--White);
+    box-shadow: var(--Shadow2);
+    border-radius: 0.3rem;
+    cursor: pointer;
 }
