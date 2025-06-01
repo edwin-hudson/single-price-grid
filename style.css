@@ -35,7 +35,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90rem;
+    /* width: 90rem; */
 }
 
 article {
@@ -150,4 +150,32 @@ button {
     box-shadow: var(--Shadow2);
     border-radius: 0.3rem;
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 41rem ) {
+    article {
+        width: 20rem;
+        height: 100%;
+    }
+
+    .section.card1 {
+        height: 35%;
+    }
+
+    .section.card1 .title {
+        font-size: 1.2rem;
+    }
+
+    .section.card1 .sub-title {
+        font-size: 0.9rem;
+    }
+
+    .section.card1 .desc {
+        font-size: 0.8rem;
+    }
+
+    .section.card2 {
+        flex-direction: column;
+    }
 }
